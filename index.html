@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <title>H2H - HearthToHearth</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/logo/hitam_tanya.png" type="image/png" sizes="16x16">
+  <!-- owl carousel css --> 
+  <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+  <!-- font awesome icons --> 
+  <link rel="stylesheet" href="css/font-awesome.css"> 
+  <!-- bootstrap css --> 
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/glide.core.min.css">
+  <link rel="stylesheet" href="./css/glide.theme.min.css">
+  <style>
+    * {
+      font-family: Roboto, "sans-serif";
+    }
+
+    .up-down {
+      animation: MoveUpDown 2s linear infinite;
+    }
+
+    @keyframes MoveUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      10% {
+        transform: translateY(-10px);
+      }
+    }
+
+.heading--h1, .heading--h2, .heading--h3, .heading--h4, .heading--h5, .heading--h6, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    line-height: 1.25;
+    font-family: Lato, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400
+}
+
+.heading--h1, h1 {
+    font-size: 1.77778em
+}
+
+.heading--h2, h2 {
+    font-size: 1.5em
+}
+
+.heading--h3, h3 {
+    font-size: 1em
+}
+
+.heading--h4, h4 {
+    font-size: .88889em
+}
+
+.heading--h5, h5 {
+    font-size: .77778em
+}
+
+.heading--h6, h6 {
+    font-size: .66667em
+}
+
+hr {
+    border-color: #32333f;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-width: 1px
+}
+
+.example__frame {
+    padding: 1.5rem;
+    border-top-left-radius: .27778em;
+    border-top-right-radius: .27778em
+}
+
+.example__code {
+    width: 100% !important;
+    display: none;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    margin: 0 !important
+}
+
+.space > * + * {
+    margin-top: 0
+}
+.space--medium > * + * {
+    margin-top: .5625em
+}
+
+.slider__frame {
+    border-radius: .16667em;
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    -webkit-box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, .5);
+    box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, .5);
+    color: #fff;
+    background: transparent;
+    font-size: 1em;
+    font-weight: 900
+}
+
+.slider__frame[class*=active] {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: linear-gradient(45deg, #ed145b, #ffc107)
+}
+
+.slider__arrow {
+    background-color: #818999;
+}
+
+.slider__arrow:hover {
+    background-color: #ff338f
+}
+
+.slider__arrow--next {
+    right: 1.5rem
+}
+
+.slider__arrow--prev {
+    left: 1.5rem
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid mx-5 px-5">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo/hitam_tanya.png" alt="" width="30" height="26" class="d-inline-block align-top">
+        H2H
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active text-warning" aria-current="page" href="#">Play!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Support Us @Re:Cloud!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid bg-dark">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4 up-down" src="./img/logo/hitam_tanya.png" alt="" width="20%">
+      <h2 style="color: white; font-weight: bold;"><span style="color:#ff338f">HEARTH</span>TO<span style="color:#ffc107">HEARTH</span></h2>
+      <p class="text-light mx-auto" style="width: 50%; font-weight: lighter;">Dari 'tanya' turun ke 'hati'
+        H2H adalah aplikasi yang memberikan pertanyaan acak sebagai pemicu obrolan untukmu agar semakin kenal, dekat, dan memahami orang lain.
+        Baca cara mainnya di bawah, atau
+      </p>
+      <button type="button" class="shadow btn btn-dark" style="background-color: #ff338f;">Mulai Bermain!</button>
+    </div>
+  </div>
+  <div class="container-fluid text-light bg-dark">
+    <div class="py-5 text-center">
+    <div class="example__frame">
+        <div class="space space--medium">
+            <h2>Cara Bermain</h2>
+            <p>Glide as type slider</p>
+            <div id="glide-demo-slider1" class="slider glide glide--ltr glide--slider glide--swipeable">
+                <div class="slider__track glide__track" data-glide-el="track">
+                    <ul class="slider__slides glide__slides" style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 2540px; transform: translate3d(255px, 0px, 0px);">
+                        <li class="slider__frame glide__slide glide__slide--active">0</li>
+                        <li class="slider__frame glide__slide">1</li>
+                        <li class="slider__frame glide__slide">2</li>
+                        <li class="slider__frame glide__slide">3</li>
+                        <li class="slider__frame glide__slide">4</li>
+                        <li class="slider__frame glide__slide">5</li>
+                        <li class="slider__frame glide__slide">6</li>
+                        <li class="slider__frame glide__slide">7</li>
+                        <li class="slider__frame glide__slide">8</li>
+                        <li class="slider__frame glide__slide">9</li>
+
+                    </ul>
+                </div>
+
+                <div data-glide-el="controls">
+                    <button class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev" data-glide-dir="<">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"></path>
+                        </svg>
+                    </button>
+
+                    <button class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next" data-glide-dir=">">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
+                    <button class="slider__bullet glide__bullet glide__bullet--active" data-glide-dir="=0"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=1"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=2"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=3"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=4"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=5"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=6"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=7"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=8"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=9"></button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+  </div>
+
+<script src="./js/glide.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var glide = new Glide('#glide-demo-slider1', {
+          type: 'slider',
+          focusAt: 'center',
+          perView: 3
+      })
+
+      glide.mount()
+
+  })
+</script>
+<!-- jquery js -->
+<script src="js/jquery.min.js"></script>
+<!-- popper js -->
+<script src="js/popper.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- owl carousel js -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- ScrollIt js -->
+<script src="js/scrollIt.min.js"></script>
+<!-- main js -->
+<script src="js/main.js"></script>
+</body>
+</html>
